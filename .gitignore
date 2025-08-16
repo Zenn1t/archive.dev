@@ -1,0 +1,34 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.opendb
+*.tlog
+*.lastbuildstate
+*.vspscc
+*.vssscc
+*.cachefile
+
+## Logs
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+## Compiled binaries
+*.exe
+*.dll
+*.lib
+*.app
+*.pdb
+*.idb
+*.ipdb
+*.iobj
+*.ilk
+*.obj
+*.pch
+*.pdb
+*.idb
+*.recipe

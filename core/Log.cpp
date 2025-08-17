@@ -156,4 +156,39 @@ namespace Log {
         const char* file, int line) {
         log_processor(message, ELogLevels::l_debug, service_name, file, line);
     }
+
+    template<typename... Args>
+    void I(Args&&... args) {
+        std::ostringstream oss;
+        (oss << ... << args);
+        I(oss.str(), SERVICE_NAME, __FILE__, __LINE__);
+    }
+
+    template<typename... Args>
+    void D(Args&&... args) {
+        std::ostringstream oss;
+        (oss << ... << args);
+        D(oss.str(), SERVICE_NAME, __FILE__, __LINE__);
+    }
+
+    template<typename... Args>
+    void W(Args&&... args) {
+        std::ostringstream oss;
+        (oss << ... << args);
+        W(oss.str(), SERVICE_NAME, __FILE__, __LINE__);
+    }
+
+    template<typename... Args>
+    void E(Args&&... args) {
+        std::ostringstream oss;
+        (oss << ... << args);
+        E(oss.str(), SERVICE_NAME, __FILE__, __LINE__);
+    }
+
+    template<typename... Args>
+    void C(Args&&... args) {
+        std::ostringstream oss;
+        (oss << ... << args);
+        C(oss.str(), SERVICE_NAME, __FILE__, __LINE__);
+    }
 }

@@ -16,6 +16,12 @@
     <Filter Include="Source Files\sortting">
       <UniqueIdentifier>{ce0411ae-ba54-4386-9c71-0760a7a2dc25}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\sortting\insertion">
+      <UniqueIdentifier>{4fe3c2d4-2719-4cf6-8e35-ff0e74ec1729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sortting\merge">
+      <UniqueIdentifier>{90b03373-3ff4-4d69-80c8-abc9acd15fd2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sorting\bubble_sort.cpp">
@@ -24,10 +30,22 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sorting\insertion.cpp">
+      <Filter>Source Files\sortting\insertion</Filter>
+    </ClCompile>
+    <ClCompile Include="sorting\insertion.hpp">
+      <Filter>Source Files\sortting\insertion</Filter>
+    </ClCompile>
+    <ClCompile Include="sorting\merge.cpp">
+      <Filter>Source Files\sortting\merge</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.hpp">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sorting\merge.hpp">
+      <Filter>Source Files\sortting\merge</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -103,6 +103,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)..\core</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,10 +125,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="sorting\merge.cpp" />
+    <ClCompile Include="sorting\insertion.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sorting\bubble_sort.cpp" />
+    <ClCompile Include="sorting\insertion.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="sorting\merge.hpp" />
     <ClInclude Include="pch.hpp" />
   </ItemGroup>
   <ItemGroup>
